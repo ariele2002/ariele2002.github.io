@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: pendiente no funciona google fonts */
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: lightblue;
+}
+
+.container {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    width: 100%;
+    max-width: 1000px;
+    min-height: 1000px;
+    margin: 50px;
+    background-color: #fff;
+    box-shadow: 0 35px 55px rgba(0, 0, 0, 0.1);
+}
+
+.container .info-izq {
+    position: relative;
+    background-color: #003147;
+    padding: 40px;
+}
+
+.perfil-info {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.perfil-info .img-box {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.perfil-info .img-box img {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.perfil-info h2 {
+    margin-top: 20px;
+    font-size: 1.5em;
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 500;
+    line-height: 1.4em;
+}
+
+.perfil-info h2 span {
+    font-size: 0.8em;
+    font-weight: 300;
+}
+
+.contacto-info {
+    padding-top: 40px;
+}
+
+.titulo {
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+
+.contacto-info ul {
+    position: relative;
+}
+
+.contacto-info ul li {
+    position: relative;
+    margin: 10px 0;
+    list-style: none;
+    cursor: pointer;
+}
+
+.contacto-info ul li .icon {
+    display: inline-block;
+    width: 30px;
+    font-size: 18px;
+    color: #03a9f4;
+}
+
+.contacto-info ul li span {
+    color: #fff;
+    font-weight: 300;
+}
+
+.container .info-der {
+    position: relative;
+    background-color: #fff;
+    padding: 40px;
+}
