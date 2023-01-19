@@ -21,7 +21,6 @@ body {
     max-width: 1000px;
     min-height: 1000px;
     margin: 50px;
-    /* background-color: #fff; */
     box-shadow: 0 35px 55px rgba(0, 0, 0, 0.1);
 }
 
@@ -48,7 +47,6 @@ body {
 }
 
 .foto-info .img-box img {
-    /* position: relative; */
     top: 0;
     left: 0;
     width: 100%;
@@ -67,7 +65,7 @@ body {
 }
 
 .foto-info h1 span {
-    font-size: 0.8em;
+    font-size: 1rem;
     font-weight: 300;
 }
 
@@ -79,6 +77,7 @@ body {
     color: #fff;
     text-transform: uppercase;
     font-weight: 600;
+    font-size: 1.3rem;
     letter-spacing: 1px;
     margin-bottom: 20px;
 }
@@ -88,20 +87,14 @@ body {
 }
 
 .contacto-info ul li {
-    position: relative;
     margin: 10px 0;
     list-style: none;
-}
-
-a {
-    text-decoration: none;
-    color: inherit;
 }
 
 .contacto-info ul li .icon {
     display: inline-block;
     width: 30px;
-    font-size: 18px;
+    font-size: 1.2rem;
     color: #03a9f4;
 }
 
@@ -118,19 +111,21 @@ a, .text {
     margin-bottom: 15px;
 }
 
-.contacto-info.formacion h5 {
+.periodo {
     color: #03a9f4;
     font-weight: 600;
+    font-size: 0.83rem;
 }
 
-.contacto-info.formacion h4:nth-child(2) {
-    color: #fff;
-    font-weight: 600;
-}
-
-.contacto-info.formacion h4 {
+.entidad {
     color: #fff;
     font-weight: 300;
+}
+
+.epigrafe {
+    color: #fff;
+    font-weight: 600;
+    font-size: 1.1rem;
 }
 
 .contacto-info.idioma .percent {
@@ -167,11 +162,12 @@ a, .text {
 .titulo-2 {
     margin-bottom: 10px;
     color: #003147;
+    font-size: 1.3rem;
     text-transform: uppercase;
     letter-spacing: 1px;
 }
 
-p {
+.perfil p {
     color: #333;
 }
 
@@ -185,15 +181,12 @@ p {
     min-width: 150px;
 }
 
-.perfil .box .anio-cia h5 {
+.perfil .box .anio-cia .periodo {
     color: #848c90;
-    font-weight: 600;
 }
 
-.perfil .box .text h4 {
-    text-transform: uppercase;
+.perfil .box .text .epigrafe {
     color: #2a7da2;
-    font-size: 16px;
 }
 
 .exp .box {
@@ -205,7 +198,7 @@ p {
     width: 100%;
 }
 
-.exp .box h4 {
+.exp .box .epigrafe {
     color: #848c99;
     font-weight: 600;
 }
@@ -217,7 +210,6 @@ p {
 }
 
 .exp .box .percent div {
-    /* position: absolute; */
     top: 0;
     left: 0;
     height: 100%;
@@ -238,7 +230,7 @@ p {
 
 .intereses ul li .fa {
     width: 20px;
-    font-size: 18px;
+    font-size: 1.2rem;
     color: #03a9f4;
 }
 
