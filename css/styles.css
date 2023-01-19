@@ -2,8 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* font-family: pendiente no funciona google fonts */
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 body {
@@ -22,7 +21,7 @@ body {
     max-width: 1000px;
     min-height: 1000px;
     margin: 50px;
-    background-color: #fff;
+    /* background-color: #fff; */
     box-shadow: 0 35px 55px rgba(0, 0, 0, 0.1);
 }
 
@@ -32,7 +31,7 @@ body {
     padding: 40px;
 }
 
-.perfil-info {
+.foto-info {
     position: relative;
     display: flex;
     flex-direction: column;
@@ -41,15 +40,15 @@ body {
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
-.perfil-info .img-box {
+.foto-info .img-box {
     width: 200px;
     height: 200px;
     border-radius: 50%;
     overflow: hidden;
 }
 
-.perfil-info .img-box img {
-    position: relative;
+.foto-info .img-box img {
+    /* position: relative; */
     top: 0;
     left: 0;
     width: 100%;
@@ -57,17 +56,17 @@ body {
     object-fit: cover;
 }
 
-.perfil-info h2 {
+.foto-info h1 {
     margin-top: 20px;
     font-size: 1.5em;
     color: #fff;
     text-transform: uppercase;
     text-align: center;
-    font-weight: 500;
+    font-weight: 600;
     line-height: 1.4em;
 }
 
-.perfil-info h2 span {
+.foto-info h1 span {
     font-size: 0.8em;
     font-weight: 300;
 }
@@ -79,7 +78,7 @@ body {
 .titulo {
     color: #fff;
     text-transform: uppercase;
-    font-weight: 500;
+    font-weight: 600;
     letter-spacing: 1px;
     margin-bottom: 20px;
 }
@@ -92,7 +91,11 @@ body {
     position: relative;
     margin: 10px 0;
     list-style: none;
-    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
 }
 
 .contacto-info ul li .icon {
@@ -102,13 +105,169 @@ body {
     color: #03a9f4;
 }
 
-.contacto-info ul li span {
+a {
+    text-decoration: none;
+}
+
+a, .text {
     color: #fff;
     font-weight: 300;
+}
+
+.contacto-info.formacion li {
+    margin-bottom: 15px;
+}
+
+.contacto-info.formacion h5 {
+    color: #03a9f4;
+    font-weight: 600;
+}
+
+.contacto-info.formacion h4:nth-child(2) {
+    color: #fff;
+    font-weight: 600;
+}
+
+.contacto-info.formacion h4 {
+    color: #fff;
+    font-weight: 300;
+}
+
+.contacto-info.idioma .percent {
+    position: relative;
+    width: 100%;
+    height: 6px;
+    background-color: #081921;
+    display: block;
+    margin-top: 5px;
+}
+
+.contacto-info.idioma .percent div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: #03a9f4;
 }
 
 .container .info-der {
     position: relative;
     background-color: #fff;
     padding: 40px;
+}
+
+.perfil {
+    margin-bottom: 50px;
+}
+
+.perfil:last-child {
+    margin-bottom: 0;
+}
+
+.titulo-2 {
+    margin-bottom: 10px;
+    color: #003147;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+p {
+    color: #333;
+}
+
+.perfil .box {
+    display: flex;
+    flex-direction: row;
+    margin: 20px 0;
+}
+
+.perfil .box .anio-cia {
+    min-width: 150px;
+}
+
+.perfil .box .anio-cia h5 {
+    color: #848c90;
+    font-weight: 600;
+}
+
+.perfil .box .text h4 {
+    text-transform: uppercase;
+    color: #2a7da2;
+    font-size: 16px;
+}
+
+.exp .box {
+    position: relative;
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.exp .box h4 {
+    color: #848c99;
+    font-weight: 600;
+}
+
+.exp .box .percent {
+    width: 100%;
+    height: 10px;
+    background-color: #f0f0f0;
+}
+
+.exp .box .percent div {
+    /* position: absolute; */
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: #03a9f4;
+}
+
+.intereses ul {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.intereses ul li {
+    margin: 10px 0;
+    list-style: none;
+    color: #333;
+    font-weight: 500;
+}
+
+.intereses ul li .fa {
+    width: 20px;
+    font-size: 18px;
+    color: #03a9f4;
+}
+
+@media (max-width: 1000px) {
+    .container {
+        margin: 10px;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .intereses ul {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .perfil .box {
+        flex-direction: column;
+    }
+
+    .perfil .box .anio-cia {
+        min-width: 150px;
+        margin-bottom: 5px;
+    }
+
+    .exp .box {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .intereses ul {
+        grid-template-columns: repeat(1, 1fr);
+    }
 }
