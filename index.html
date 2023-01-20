@@ -1,54 +1,82 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Curriculum Vitae</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./css/menu.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
 </head>
-<body>
+
+<body id="inicio">
     <main class="container">
+        <!-- Menu -->
+        <header class="header">
+            <nav class="nav">
+                <button class="nav__toggle" aria-label="Open Menu">
+                    <span class="line line__top"></span>
+                    <span class="line line__middle"></span>
+                    <span class="line line__bottom"></span>
+                </button>
+                <ul class="menu">
+                    <li class="menu__item">
+                        <a href="#inicio" class="menu__link text-link menu__link--active">
+                            Inicio
+                        </a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="#formacion" class="menu__link text-link">
+                            Formacion
+                        </a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="#perfil" class="menu__link text-link">
+                            Perfil
+                        </a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="#habilidades" class="menu__link text-link">
+                            Habilidades
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <!-- Fin del Menu -->
         <!-- Sección izquierda -->
-        <section class="info-izq">
-            <article class="foto-info">
-                <div class="img-box">
-                    <img src="./imgs/foto-perfil01.jpg" alt="Mi foto de perfil">
+        <section class="info__izq">
+            <article class="foto__info">
+                <div class="img__box">
+                    <img src="./imgs/foto-perfil01.jpg" alt="Foto de perfil" />
                 </div>
-                <h1>Carlos Gonzales<br><span>Desarrollador Front-End</span></h1>
+                <h1>Carlos Gonzales<br /><span>Desarrollador Front-End</span></h1>
             </article>
 
-            <article class="contacto-info">
-                <h2 class="titulo">
-                    Contacto
-                </h2>
+            <article class="contacto__info">
+                <h2 class="titulo">Contacto</h2>
                 <ul>
                     <li>
                         <span class="icon">
                             <i class="fa fa-phone" aria-hidden="true"></i>
                         </span>
-                        <a href="tel:+123456789">
-                            +54 9 11 53534566
-                        </a>
+                        <a href="tel:+123456789"> +54 9 11 53534566 </a>
                     </li>
                     <li>
                         <span class="icon">
                             <i class="fa fa-envelope-o" aria-hidden="true"></i>
                         </span>
-                        <a href="mailto:cagonzales@example.com">
-                                cagonzales@gmail.com
-                        </a>
+                        <a href="mailto:cagonzales@example.com"> cgonzales@gmail.com </a>
                     </li>
                     <li>
                         <span class="icon">
                             <i class="fa fa-globe" aria-hidden="true"></i>
                         </span>
-                        <a href="https://www.example.com">
-                            www.cgonzales.com
-                        </a>
+                        <a href="https://www.example.com"> www.cgonzales.com </a>
                     </li>
                     <li>
                         <span class="icon">
@@ -59,10 +87,8 @@
                 </ul>
             </article>
 
-            <article class="contacto-info formacion">
-                <h2 class="titulo">
-                    Formación
-                </h2>
+            <article class="contacto__info formacion" id="formacion">
+                <h2 class="titulo">Formación</h2>
                 <ul>
                     <li>
                         <p class="periodo">2022 - 2023</p>
@@ -82,101 +108,107 @@
                 </ul>
             </article>
 
-            <article class="contacto-info idioma">
-                <h2 class="titulo">
-                    Idiomas
-                </h2>
+            <article class="contacto__info idioma">
+                <h2 class="titulo">Idiomas</h2>
                 <ul>
                     <li>
                         <span class="text">Inglés</span>
                         <span class="percent">
-                            <div style="width: 50%;"></div>
+                            <div style="width: 50%"></div>
                         </span>
                     </li>
                     <li>
                         <span class="text">Español</span>
                         <span class="percent">
-                            <div style="width: 100%;"></div>
+                            <div style="width: 100%"></div>
                         </span>
                     </li>
                 </ul>
             </article>
         </section>
         <!-- Seccion derecha -->
-        <section class="info-der">
+        <section class="info__der" id="perfil">
             <article class="perfil">
-                <h2 class="titulo-2">Perfil</h2>
+                <h2 class="titulo__2">Perfil</h2>
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus deleniti et quod sunt facilis vel architecto fugiat quis.<br><br> alias totam reprehenderit, praesentium animi placeat atque est, dolore eaque reiciendis rem neque eligendi! Recusandae modi quam eligendi officiis autem, corporis saepe deleniti assumenda, aliquam sint quaerat repellat explicabo similique, neque ipsam!
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus
+                    deleniti et quod sunt facilis vel architecto fugiat quis.<br /><br />
+                    alias totam reprehenderit, praesentium animi placeat atque est,
+                    dolore eaque reiciendis rem neque eligendi! Recusandae modi quam
+                    eligendi officiis autem, corporis saepe deleniti assumenda, aliquam
+                    sint quaerat repellat explicabo similique, neque ipsam!
                 </p>
             </article>
 
             <article class="perfil">
-                <h2 class="titulo-2">Experiencia</h2>
+                <h2 class="titulo__2">Experiencia</h2>
                 <div class="box">
-                    <div class="anio-cia">
+                    <div class="anio__cia">
                         <p class="periodo">2022 - Presente</p>
                         <p class="periodo">Google</p>
                     </div>
                     <div class="text">
                         <p class="epigrafe">Desarrollador Interfaces Web</p>
                         <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, labore maxime sint aliquid culpa ut?
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Praesentium, labore maxime sint aliquid culpa ut?
                         </p>
                     </div>
                 </div>
 
                 <div class="box">
-                    <div class="anio-cia">
+                    <div class="anio__cia">
                         <p class="periodo">2020 - 2022</p>
                         <p class="periodo">La Dervechia</p>
                     </div>
                     <div class="text">
                         <p class="epigrafe">Desarrollador Front-End</p>
                         <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, labore maxime sint aliquid culpa ut?
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Praesentium, labore maxime sint aliquid culpa ut?
                         </p>
                     </div>
                 </div>
 
                 <div class="box">
-                    <div class="anio-cia">
+                    <div class="anio__cia">
                         <p class="periodo">2020 - 2022</p>
                         <p class="periodo">La Compañia</p>
                     </div>
                     <div class="text">
                         <p class="epigrafe">Maquetador</p>
                         <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, labore maxime sint aliquid culpa ut?
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Praesentium, labore maxime sint aliquid culpa ut?
                         </p>
                     </div>
                 </div>
             </article>
 
-            <article class="perfil exp">
-                <h2 class="titulo-2">Habilidades</h2>
+            <article class="perfil exp" id="habilidades">
+                <h2 class="titulo__2">Habilidades</h2>
                 <div class="box">
                     <p class="epigrafe">HTML</p>
                     <div class="percent">
-                        <div style="width: 90%;"></div>
+                        <div style="width: 90%"></div>
                     </div>
                 </div>
                 <div class="box">
                     <p class="epigrafe">CSS</p>
                     <div class="percent">
-                        <div style="width: 80%;"></div>
+                        <div style="width: 80%"></div>
                     </div>
                 </div>
                 <div class="box">
                     <p class="epigrafe">JavaScript</p>
                     <div class="percent">
-                        <div style="width: 85%;"></div>
+                        <div style="width: 85%"></div>
                     </div>
                 </div>
             </article>
 
             <article class="perfil intereses">
-                <h2 class="titulo-2">Intereses</h2>
+                <h2 class="titulo__2">Intereses</h2>
                 <ul>
                     <li>
                         <i class="fa fa-gamepad" aria-hidden="true"></i>
@@ -197,7 +229,6 @@
                 </ul>
             </article>
         </section>
-
     </main>
     <script src="https://kit.fontawesome.com/8683b5ff37.js" crossorigin="anonymous"></script>
     <script src="./js/scripts.js"></script>
