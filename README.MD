@@ -2,6 +2,7 @@
 ## Primeros Pasos en el Desarrollo Front End
 Se solicita la creación de un Currículum Vitae online para poner en practica los conocimientos adquiridos en el curso.
 ## Comentarios Sobre el Presente Proyecto
+- Se aplicaron los conocimientos adquiridos, mas conocimientos previos.
 - Idea sobre el diseño extraido de: 
     - [Canvas](https://www.canva.com/es_es/)
     - Canal de youtube de OT: [How to Create Responsive Resume Website using HTML and CSS](https://www.youtube.com/watch?v=hnjHCmaUVPg&t=176s)
@@ -29,3 +30,4 @@ Se solicita la creación de un Currículum Vitae online para poner en practica l
     - [Developer Mozilla](https://developer.mozilla.org/es/)
     - [W3S](https://www.w3schools.com/)
 
+Accede al proyecto [click aqui](https://github.com/ariele2002/ticmas_academy_tp1.github.io.git).
