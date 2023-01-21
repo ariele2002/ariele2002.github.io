@@ -10,12 +10,12 @@ navToggle.addEventListener('click', () => {
 
     if(menu.classList.contains('menu--visible')) {
 
-        navToggle.setAttribute('aria-label', 'Open Menu');
-        navToggle.classList.add('nav__toggle--visible');
+        addNavToggleVisible();
+
     } else {
 
-        navToggle.setAttribute('aria-label', 'Close Menu');
-        navToggle.classList.remove('nav__toggle--visible');
+        removeNavToggleVisible();
+
     }
 });
 
@@ -33,10 +33,21 @@ menu.addEventListener('click', (e) => {
             // cerrar menu al hacer click en un link
 
         if (menu.classList.contains('menu--visible')) {
+
             menu.classList.remove('menu--visible');
-            navToggle.setAttribute('aria-label', 'Close Menu');
-            navToggle.classList.remove('nav__toggle--visible');
+            removeNavToggleVisible();
+
         }
     }
-
 });
+
+function addNavToggleVisible() {
+    navToggle.setAttribute('aria-label', 'Open Menu');
+    navToggle.classList.add('nav__toggle--visible');
+}
+
+function removeNavToggleVisible() {
+
+    navToggle.setAttribute('aria-label', 'Close Menu');
+    navToggle.classList.remove('nav__toggle--visible');
+}
