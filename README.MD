@@ -30,4 +30,4 @@ Se solicita la creación de un Currículum Vitae online para poner en practica l
     - [Developer Mozilla](https://developer.mozilla.org/es/)
     - [W3S](https://www.w3schools.com/)
 
-Accede al proyecto [click aqui](https://github.com/ariele2002/ticmas_academy_tp1.github.io.git).
+Accede al proyecto [click aqui](https://ariele2002.github.io/).
