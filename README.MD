@@ -6,7 +6,7 @@ Se solicita la creación de un Currículum Vitae online para poner en practica l
 - Idea sobre el diseño extraido de: 
     - [Canvas](https://www.canva.com/es_es/)
     - Canal de youtube de OT: [How to Create Responsive Resume Website using HTML and CSS](https://www.youtube.com/watch?v=hnjHCmaUVPg&t=176s)
-- Menu desplegable es de una practica subido a Github.com y reutilizado con muchas modificaciones en este proyecto: [código](https://github.com/ariele2002/menu-responsive)
+- Menu desplegable es de una practica subido a GitHub y reutilizado con muchas modificaciones en este proyecto: [código](https://github.com/ariele2002/menu-responsive)
 - No pude manejar el ancho del `header`, el `position: fixed` toma el viewport y no el contenedor, cualquier ayuda es bien recibida.
 
 <h2 style="text-align: center">Boceto</h2>
